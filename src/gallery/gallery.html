@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kenia&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/920e9aba3b.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <a href="" class="logo"><img src="logo.jpg" alt="logo"></a>
+      <ul id="navbar">
+        <li><a class="nav_a" href="../home-page/home-page.html">Home</a></li>
+        <li>
+          <a
+            href="../shop-page/shop.html"
+            class="nav_a"
+            >Shop</a
+          >
+        </li>
+        <li><a class="nav_a Active" href="../gallery/gallery.html">Gallery</a></li>
+        <li><a class="nav_a" href="../comments-form/commentsform/commentsform.html">Comments</a></li>
+        <li><a class="nav_a " href="../sitemap/sitemap.html">Sitemap</a></li>
+        <li><a class="nav_a" href="../quiz/quiz.html">Quiz</a></li>
+        <li>
+          <a
+            href="../content-page-student-4/content-student-4.html"
+            class="nav_a"
+            >Content page</a
+          >
+        </li>
+        <li><a class="nav_a" href="../student-info/student-info.html">About</a></li>
+      </ul>
+    </div>
+    <div class="section-1">
+      <div class="right-panel">
+        <div id="left-panel">
+          <div class="editor">
+            <h4 style="margin-top: 50px">Quick Access</h4>
+            <a class="left-a" id="back-to-top-link"> Back to top </a>
+          </div>
+          <div class="editor">
+            <h4>Color theme</h4>
+            <div class="div-color-scheme">
+              <button onclick="changeTheme('light')" class="btn light-btn">
+                Light
+              </button>
+              <button onclick="changeTheme('dark')" class="btn dark-btn">
+                Dark
+              </button>
+              <button onclick="changeTheme('blue')" class="btn blue-btn">
+                Blue
+              </button>
+              <button onclick="changeTheme('random')" class="btn random-btn">
+                Random
+              </button>
+            </div>
+            <h4>Font size</h4>
+            <div class="div-font-size">
+              <button onclick="changeFontSize('small')" class="btn small-btn">
+                Small
+              </button>
+              <button onclick="changeFontSize('medium')" class="btn medium-btn">
+                Medium
+              </button>
+              <button onclick="changeFontSize('large')" class="btn large-btn">
+                Large
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail-panel">
+          <div class="des" id="back-to-top-heading">
+            <h3 style="font-size: 50px; color: azure">
+              A MORE ENTERTAINING EXPERIENCE FOR <br>
+              YOUR LIFE
+            </h3>
+            <h2
+              style="
+                background-color: rgb(80, 80, 80);
+                color: azure;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 15px;
+              ">
+              <i> Checkout the latest top TV Series available now </i>
+            </h2>
+          </div>
+          <div class="catogaries">
+            <div class="catogery active" id="all" onclick="showAll()">
+              <h4 class="cat-links">All</h4>
+            </div>
+            <div class="catogery" id="action" onclick="showAction()">
+              <h4 class="cat-links">Action & Adventure</h4>
+            </div>
+            <div class="catogery" id="comedy" onclick="showComedy()">
+              <h4 class="cat-links">Comedy</h4>
+            </div>
+            <div class="catogery" id="documenrary" onclick="showDocumenrary()">
+              <h4 class="cat-links">Documenrary</h4>
+            </div>
+            <div class="catogery" id="frictional" onclick="showFrictional()">
+              <h4 class="cat-links">Frictional</h4>
+            </div>
+          </div>
+          <div
+            class="des-container div-action game-of-thrones"
+            onclick="loadDescription('game-of-thrones')">
+            <img src="game-of-thrones-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 55%">&nbsp;GAME OF THRONES&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Action & Adventure
+                </h4>
+              </div>
+              <p>
+                Experience the epic conclusion of Game of Thrones as the battle
+                for the Iron Throne reaches its climax.
+              </p>
+              <button
+                style="
+                  background-color: #34495e;
+                  color: white;
+                  width: 30%;
+                  margin: 30px 0 0 150px;
+                  padding: 10px;
+                "
+                class="more-btn">
+                Click to read more
+              </button>
+            </div>
+          </div>
+          <div
+            class="des-container div-frictional"
+            onclick="loadDescription('last-of-us')">
+            <img src="last-of-us-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;LAST OF US&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Frictional
+                </h4>
+              </div>
+              <p>
+                Join Ellie and Joel on their perilous journey across a
+                post-apocalyptic world in the highly-anticipated sequel to The
+                Last of Us
+              </p>
+              <button
+                style="
+                  background-color: #34495e;
+                  color: white;
+                  width: 30%;
+                  margin: 30px 0 0 150px;
+                  padding: 10px;
+                ">
+                Click to read more
+              </button>
+            </div>
+          </div>
+          <div
+            class="des-container div-action money-heist"
+            onclick="loadDescription('money-heist')">
+            <img src="money-heist-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;MONEY HEIST&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Action & Adventure
+                </h4>
+              </div>
+              <p>
+                Get ready for the biggest heist yet as the Professor and his
+                team return for one final, explosive season of Money Heist.
+              </p>
+              <button
+                style="
+                  background-color: #34495e;
+                  color: white;
+                  width: 30%;
+                  margin: 30px 0 0 150px;
+                  padding: 10px;
+                ">
+                Click to read more
+              </button>
+            </div>
+          </div>
+          <div
+            class="des-container div-comedy"
+            onclick="loadDescription('american-vandal')">
+            <img src="american-vandal-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 60%">&nbsp;AMERICAN VANDAL&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Comedy
+                </h4>
+              </div>
+              <p>
+                Uncover a new scandal with American Vandal's latest season, as
+                Peter and Sam investigate a mysterious and hilarious crime
+              </p>
+              <button
+                style="
+                  background-color: #34495e;
+                  color: white;
+                  width: 30%;
+                  margin: 30px 0 0 150px;
+                  padding: 10px;
+                ">
+                Click to read more
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="des-container div-comedy"
+            onclick="loadDescription('family-guy')">
+            <img src="family-guy-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;FAMILY GUY&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Comedy
+                </h4>
+              </div>
+              <div class="thumb-des">
+                <p>
+                  Laugh out loud with Family Guy's latest season as the Griffins
+                  continue their outrageous and hilarious adventures in Quahog
+                </p>
+                <button
+                  style="
+                    background-color: #34495e;
+                    color: white;
+                    width: 30%;
+                    margin: 30px 0 0 150px;
+                    padding: 10px;
+                  ">
+                  Click to read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="des-container div-documenrary"
+            onclick="loadDescription('game-theory')">
+            <img
+              src="Game-Theory-with-Bomani-Jones-Thumbnail.jpg"
+              alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;GAME THRORY&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Documentary
+                </h4>
+              </div>
+
+              <div class="thumb-des">
+                <p>
+                  Join Bomani Jones on Game Theory's latest season as he
+                  analyzes the biggest sports stories with a unique and
+                  insightful perspective.
+                </p>
+                <button
+                  style="
+                    background-color: #34495e;
+                    color: white;
+                    width: 30%;
+                    margin: 30px 0 0 150px;
+                    padding: 10px;
+                  ">
+                  Click to read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="des-container div-documenrary"
+            onclick="loadDescription('last-dance')">
+            <img src="last-dance-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;LAST DANCE&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Documentary
+                </h4>
+              </div>
+              <div class="thumb-des">
+                <p>
+                  Relive Michael Jordan's legendary career and the Chicago
+                  Bulls' dynasty in the Emmy-award winning documentary series,
+                  The Last Dance.
+                </p>
+                <button
+                  style="
+                    background-color: #34495e;
+                    color: white;
+                    width: 30%;
+                    margin: 30px 0 0 150px;
+                    padding: 10px;
+                  ">
+                  Click to read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="des-container div-frictional"
+            onclick="loadDescription('the-boys')">
+            <img src="the-boys-thumbnail.jpg" alt="Image">
+            <div class="thumb-des">
+              <div class="des-title">
+                <h1 style="width: 50%">&nbsp;THE BOYS&nbsp;</h1>
+                <h4 class="type" style="width: auto; font-size: 15px">
+                  Frictional
+                </h4>
+              </div>
+              <div class="thumb-des">
+                <p>
+                  Buckle up for a wild ride with The Boys' latest season, as the
+                  team fights to expose corrupt superheroes and save the world
+                </p>
+                <button
+                  style="
+                    background-color: #34495e;
+                    color: white;
+                    width: 30%;
+                    margin: 30px 0 0 150px;
+                    padding: 10px;
+                  ">
+                  Click to read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="des-panel">
+          <div class="series s-game-of-thrones">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1 id="game-of-thrones-heading">&nbsp;GAME OF THRONES</h1>
+            </div>
+            <div class="img-div">
+              <img
+                id="mainImg"
+                src="dragon-and-daenerys-targayen-vm-1360x768.jpg"
+                alt="main-got">
+              <div class="img-container">
+                <img
+                  src="dragon-and-daenerys-targayen-vm-1360x768.jpg"
+                  onclick="changeImage('mainImg','dragon-and-daenerys-targayen-vm-1360x768.jpg')"
+                  alt="slideshow-img">
+                <img
+                  src="game-of-thrones-season-1-episode-1-full-stitched-607175_PRO35_10-1920.jpg"
+                  onclick="changeImage('mainImg','game-of-thrones-season-1-episode-1-full-stitched-607175_PRO35_10-1920.jpg')"
+                  alt="slideshow-img">
+                <img
+                  src="Battle-of-the-Bastards.jpg"
+                  onclick="changeImage('mainImg','Battle-of-the-Bastards.jpg')"
+                  alt="slideshow-img">
+              </div>
+              <a class="prev" onclick="changeSlidesForGameOfTrones(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForGameOfTrones(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              A Song of Ice and Fire by George R. R. Martin became the
+              inspiration for the fantasy thriller television series Game of
+              Thrones. The television series, which is set in the made-up Seven
+              Kingdoms of Westeros, focuses on the battle for control of the
+              Iron Throne, which serves as the seat of the monarch, between
+              various noble houses. Characters in the show range from noble
+              lords and women to cunning politicians and brutal warriors, and
+              there is a sizable ensemble cast. The series examines themes of
+              power, family, and loyalty in addition to the political intrigue
+              and fantasy elements like dragons and magic.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch Game Of Thrones
+            </h4>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> You'll never know what's
+              going to happen next in the thrilling and unpredictable fantasy
+              thriller Game of Thrones.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> The program features a
+              sizable ensemble cast of complex characters, all of whom have
+              their own goals and motivations.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> The world in which the
+              series is based is fully realized, intricate, and full of lore and
+              history.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Game of Thrones is
+              renowned for its surprising narrative turns, compelling combat
+              scenes, and breathtaking visual effects.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Every new episode of Game
+              of Thrones is eagerly anticipated by fans around the globe, who
+              treat it as a cultural event.
+            </p>
+          </div>
+          <div class="series s-the-boys">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1>&nbsp;THE BOYS</h1>
+            </div>
+            <div class="img-div">
+              <img id="mainImg2" src="the-boys.jpg" alt="mainimg-the-boys">
+              <div class="img-container">
+                <img
+                  src="the-boys.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg2','the-boys.jpg')">
+                <img
+                  src="boyszoom-2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg2','boyszoom-2.jpg')">
+                <img
+                  src="The-Boys-Dawn-of-the-Seven.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg2','The-Boys-Dawn-of-the-Seven.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForTheBoys(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForTheBoys(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              A dark, irreverent spin on the superhero archetype can be
+              discovered in The Boys. It follows a group of vigilantes who seek
+              to eliminate these improbable heroes who abuse their power and
+              perpetrate atrocities behind closed doors in a world where
+              superheroes are corporate assets. The team, led by the vengeful
+              Billy Butcher, struggles to overcome its own personal demons and
+              traumas as it attempts to uncover and expose the truth about these
+              superheroes. The Boys provides a new and provocative perspective
+              on the superhero archetype with its sharp satire, graphic
+              violence, and intense performances.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch The Boys
+            </h4>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> With a focus on the
+              darker aspect of superheroism, The Boys offers a fresh perspective
+              on the superhero genre.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> By reinterpreting
+              established superhero tropes, the show provides a novel viewpoint
+              on the field.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The characters are
+              intricate and well-developed, each with their own faults and
+              motivations.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The series also addresses
+              significant social problems like politics, corruption, and power
+              relationships.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> With unexpected twists
+              and turns, The Boys is an exhilarating, action-packed journey that
+              keeps you on the edge of your seat.
+            </p>
+          </div>
+          <div class="series s-last-of-us">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1>&nbsp;LAST OF US</h1>
+            </div>
+
+            <div class="img-div">
+              <img id="mainImg3" src="last01.jpg" alt="main-img-last-of-us">
+              <div class="img-container">
+                <img
+                  src="last01.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg3','last01.jpg')">
+                <img
+                  src="last2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg3','last2.jpg')">
+                <img
+                  src="last3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg3','last3.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForLastOfUs(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForLastOfUs(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              The Last of Us is an TV series based on the popular video game of
+              the same name. The plot focuses on Joel, a smuggler, and Ellie, a
+              young child who may hold the secret to a cure, in a
+              post-apocalyptic world where a fungal illness has transformed most
+              of humanity into infected monsters. Together, they make their way
+              through a hostile, perilous world populated by infected survivors.
+              In addition to exploring themes of survival, loss, and the ties
+              that develop between unlikely allies in the face of unfathomable
+              adversity, the series will dig further into the game's characters
+              and setting.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch Last Of Us
+            </h4>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The TV show The Last of Us
+              promises to be an engrossing post-apocalyptic tale set in a
+              gorgeously designed universe.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Your interest in the
+              characters' journeys is piqued by their complexity, depth, and
+              well-developed personalities.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Fans can be confident in
+              the content of the show because it is being produced by the same
+              writer and creative team as the original game.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> The series will delve
+              deeply into concepts like morality, what it means to be human, and
+              survival, making it more than just your average action-adventure
+              tale.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              The Last of Us TV series has the potential to be a truly
+              unforgettable watching experience thanks to its high production
+              value, excellent acting, and immersive narrative.
+            </p>
+          </div>
+          <div class="series s-money-heist">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1>&nbsp;Money Heist</h1>
+            </div>
+
+            <div class="img-div">
+              <img id="mainImg4" src="money3.jpg" alt="main-img-last-of-us">
+              <div class="img-container">
+                <img
+                  src="money3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg4','money3.jpg')">
+                <img
+                  src="money1.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg4','money1.jpg')">
+                <img
+                  src="money2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg4','money2.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForMoneyHeist(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForMoneyHeist(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              Money Heist is a Spanish crime thriller TV series created by Alex
+              Pina. The robbers who plot and carry out a painstakingly planned
+              heist on the Royal Mint of Spain and subsequently the Bank of
+              Spain are the focus of the show. They are led by a mastermind
+              known as "The Professor." The program is renowned for its complex
+              storyline, exciting action, and character growth. The show's
+              clever use of flashbacks, complex character arcs, and themes of
+              love, betrayal, and devotion have all contributed to its success.
+              Money Heist has garnered praise from critics for its creative
+              storytelling and has grown to be a worldwide sensation with a
+              sizable fan base.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch Money Heist
+            </h4>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Money Heist has an
+              intricate and thrilling plot that keeps you on the edge of your
+              seat.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The characters are complex
+              and well-developed, making it easy to invest in their storylines.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> The show's use of
+              flashbacks adds depth and complexity to the story.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Money Heist tackles
+              themes of love, betrayal, and loyalty, making it emotionally
+              compelling.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              The show has a massive global following and is widely regarded as
+              one of the best crime thrillers in recent years, making it a
+              must-watch for fans of the genre.
+            </p>
+          </div>
+          <div class="series s-american-vandal">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+            </div>
+
+            <h1>&nbsp;American Vandal</h1>
+            <div class="img-div">
+              <img id="mainImg5" src="ame1.jpg" alt="main-img-last-of-us">
+              <div class="img-container">
+                <img
+                  src="ame1.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg5','ame1.jpg')">
+                <img
+                  src="ame2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg5','ame2.jpg')">
+                <img
+                  src="ame3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg5','ame3.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForAmericanVandal(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForAmericanVandal(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              American Vandal is a mockumentary-style true crime comedy series
+              that originally aired on Netflix. By emphasizing ridiculous and
+              insignificant crimes that are probed with the same intensity as
+              more serious crimes, the program parodies the true crime genre. In
+              the first season, 27 faculty vehicles are vandalized with phallic
+              images as part of a high school practical joke. The second season
+              tracks a fresh case in which the canteen of a private school is
+              contaminated with laxatives, leading to a catastrophe that affects
+              the entire institution. The series employs a lighthearted tone to
+              examine issues like adolescence, societal hierarchies, and the
+              media's obsession on crime and controversy.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch American Vandal
+            </h4>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>You'll be entertained by
+              the intriguing fusion of real crime and humor in American Vandal.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The series offers an
+              original and amusing approach to the mockumentary genre.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Particularly for younger
+              viewers, the characters are well-written and relatable.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i> The series maintains its
+              sense of humor while still maintaining its humor.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              American Vandal is a thought-provoking and binge-worthy television
+              show.
+            </p>
+          </div>
+          <div class="series s-family-guy">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1>&nbsp;FAMILY GUY</h1>
+            </div>
+
+            <div class="img-div">
+              <img id="mainImg6" src="fam1.jpg" alt="mainimg-the-boys">
+              <div class="img-container">
+                <img
+                  src="fam1.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg6','fam1.jpg')">
+                <img
+                  src="fam2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg6','fam2.jpg')">
+                <img
+                  src="fam3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg6','fam3.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForFamilyGuy(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForFamilyGuy(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              Seth MacFarlane's cartoon comedy Family Guy is about the
+              dysfunctional Griffin family, who live in the imaginary Rhode
+              Island community of Quahog. The program is renowned for its
+              outrageous and frequently divisive comedy as well as its frequent
+              pop culture references and throwaway jokes. The goofy father
+              Peter, his wife Lois, their kids Meg, Chris, and Stewie, as well
+              as their talking dog Brian, are the main protagonists of the
+              program. A modern culture phenomenon, Family Guy has inspired
+              products, spin-off television series, and even a feature film.
+              Fans of irreverent comedy and animated comedies must watch it.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch Family Guys
+            </h4>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>You won't stop giggling
+              while watching the irreverent and funny cartoon comedy "Family
+              Guy."
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Every kind of viewers
+              will enjoy this show's absurd comedy and modern-day references.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Despite the characters'
+              various flaws, they are well-developed and likeable.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>A cultural icon, Family
+              Guy has inspired numerous spin-offs and products.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Family Guy is a must-watch
+              if you would like animated comedies or humor that pushes
+              boundaries.
+            </p>
+          </div>
+          <div class="series s-game-theory">
+            <div class="des-head">
+              <div
+                class="back"
+                onclick="backToThumbnail()"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                ">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1  style="width: 55% !important">
+                &nbsp;Game Theory with Bomani Jones
+              </h1>
+            </div>
+
+            <div class="img-div">
+              <img id="mainImg7" src="game1.jpg" alt="mainimg-the-boys">
+              <div class="img-container">
+                <img
+                  src="game1.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg7','game1.jpg')">
+                <img
+                  src="game2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg7','game2.jpg')">
+                <img
+                  src="game3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg7','game3.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForGameTheory(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForGameTheory(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              "Game Theory with Bomani Jones" is a sports talk show that
+              premiered in 2021. Bomani Jones, a sports writer renowned for his
+              insightful analysis and humorous comments, hosts the program.
+              Sports analysis is approached in a unique manner by "Game Theory,"
+              which includes talks of economics, statistics, and societal
+              problems. Jones and his guests examine the relationship between
+              sports and society, frequently straying off the playing field. The
+              program has received praise for its stimulating talks and unique
+              perspective on sports media. For sports fans seeking a better
+              grasp of the games they enjoy, it is a must-watch.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch Game Theory with Bomani Jones
+            </h4>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> By Incorporating
+              economics, statistics, and societal problems into sports analysis,
+              Game Theory presents a unique viewpoint.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> Bomani Jones, a reputable
+              sports writer popular for his insightful analysis and humorous
+              critiques, serves as the show's presenter.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Jones and his guests
+              explore the intersection of sports and culture, while engaging in
+              stimulating conversations on a variety of subjects.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The program has received
+              praise for its innovative take on sports journalism and its
+              ability to shed light on topics outside of the playing field.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Game Theory with Bomani
+              Jones is a must-watch if you're a sports fan searching for an
+              in-depth understanding of the sports you enjoy.
+            </p>
+          </div>
+          <div class="series s-last-dance">
+            <div class="des-head">
+              <div
+                class="back"
+                style="
+                  background-color: #eb3b5a;
+                  color: white;
+                  width: 10%;
+                  text-align: center;
+                  border-radius: 10px;
+                  padding: 10px;
+                "
+                onclick="backToThumbnail()">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back
+              </div>
+              <h1>&nbsp;Last Dance</h1>
+            </div>
+
+            <div class="img-div">
+              <img id="mainImg8" src="dance1.jpg" alt="mainimg-the-boys">
+              <div class="img-container">
+                <img
+                  src="dance1.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg8','dance1.jpg')">
+                <img
+                  src="dance2.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg8','dance2.jpg')">
+                <img
+                  src="dance3.jpg"
+                  alt="slideshow-img"
+                  onclick="changeImage('mainImg8','dance3.jpg')">
+              </div>
+              <a class="prev" onclick="changeSlidesForLastDance(-1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a class="next" onclick="changeSlidesForLastDance(1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <p style="line-height: 2 !important">
+              The Last Dance is a documentary series that chronicles the rise of
+              the Chicago Bulls and their legendary superstar Michael Jordan in
+              the 1990s. The show provides an inside glimpse at the team's path
+              to six NBA titles in eight years. Michael Jordan and his
+              colleagues are interviewed on the program, and there is also
+              never-before-seen video from the team's title seasons. The Last
+              Dance has received acclaim for its in-depth study of one of the
+              best sporting dynasties and its analysis of Michael Jordan's
+              influence on the game. Both basketball enthusiasts and sports
+              enthusiasts should to watch it.
+            </p>
+            <h4 style="margin: 20px">
+              <i class="fa-solid fa-question fa-flip"></i>&nbsp; Why Should you
+              watch The Last Dance
+            </h4>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The Last Dance is about
+              one of the best basketball teams in history.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i> BThe show offers a
+              behind-the-scenes look at Michael Jordan and the Chicago Bulls
+              during their famous title run.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>Interviews with Jordan and
+              his colleagues are included in the series, along with previously
+              unreleased video.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The basketball game and
+              the commitment and effort needed to succeed are both explored in
+              The Last Dance.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>The Last Dance is a
+              must-watch whether you're a basketball fan or just a fan of
+              excellent storytelling in general.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="gallery_script.js"></script>
+  </body>
+</html>
