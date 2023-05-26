@@ -13,8 +13,6 @@ _
 /src/editor-page-student-4/editor-student-4.html,5\f\5f7ba51299a513239733e51b98ab51293b6344bf
 B
 src/quiz/quiz.html,2\b\2b4681b14b7d48139c84edbd73a8fa15070193c5
-M
-src/shop-page/shop-styles.css,8\6\86522df32d7440d6ae90d29c5b586a5c1c5cf06c
 `
 0src/comments-form/commentsform/commentsform.html,1\9\199a1ef60ef6076d1b60eae10ea2f57589b9143c
 Q
@@ -35,8 +33,6 @@ a
 1src/content-page-student-3/content-student-3.html,c\d\cdd3aff7544d07acebe89a6c5c0c8b479bc469a3
 _
 /src/editor-page-student-3/editor-student-3.html,9\5\9523c1d5d134384d0ddcf528dc36a0f90b10c3d1
-a
-1src/content-page-student-1/content-student-1.html,e\3\e39f5e47eb5d6645b2965964f062d097022bd177
 _
 /src/editor-page-student-1/editor-student-1.html,5\2\52b22e9fc0f01e34f3084134a9117f87220d90e2
 Z
