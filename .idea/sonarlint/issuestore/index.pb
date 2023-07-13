@@ -37,3 +37,13 @@ _
 /src/editor-page-student-1/editor-student-1.html,5\2\52b22e9fc0f01e34f3084134a9117f87220d90e2
 Z
 *src/editor-page-student-1/editor-script.js,8\2\821e40cabcb53b22a3cb2f015df924ea91eb59ca
+L
+src/home-page/home-page.html,4\b\4b86da4c3c1ec8a08862c68c93c57e47b759e377
+L
+src/shop-page/shop-script.js,6\0\604fd40eb6c70b5b0f94372858ab5be07ed1276f
+Q
+!src/home-page/home-page-style.css,c\b\cb0c6e6ae510d25e208b65e6df40f59c3671ba48
+a
+1src/content-page-student-1/content-student-1.html,e\3\e39f5e47eb5d6645b2965964f062d097022bd177
+]
+-src/content-page-student-1/content-styles.css,2\2\22f576d04457eb5f82a2b14dba44225285643718
