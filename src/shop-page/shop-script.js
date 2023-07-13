@@ -375,3 +375,48 @@ function makePayment() {       // Make payment, clear the cart and return to the
 function cancelPayment(){       // Cancel the payment, clear the cart and return to shop
     window.location.href = 'shop.html'
 }
+
+
+// Scrolling code start
+
+// Smooth scroll functionality
+// Smooth scroll functionality with easing
+document.querySelectorAll('a.smooth-scroll').forEach((anchor) => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = anchor.getAttribute('href');
+        const targetPosition = document.querySelector(targetId).offsetTop;
+        const duration = 800;
+        scrollTo(targetPosition, duration);
+    });
+});
+
+// Easing functions
+Math.easeInOutQuad = function (t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+};
+
+// Perform the smooth scroll animation with easing
+function scrollTo(to, duration) {
+    const start = window.scrollY;
+    const change = to - start;
+    let currentTime = 0;
+    const increment = 20;
+
+    function animateScroll() {
+        currentTime += increment;
+        const val = Math.easeInOutQuad(currentTime, start, change, duration);
+        window.scroll(0, val);
+        if (currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    }
+
+    animateScroll();
+}
+
+
+// Scrolling code end

@@ -17,8 +17,6 @@ B
 0src/comments-form/commentsform/commentsform.html,1\9\199a1ef60ef6076d1b60eae10ea2f57589b9143c
 Q
 !src/home-page/home-page-script.js,9\6\9687698d47e360c1c22f4b48da1cdaf0f6567b3d
-H
-src/sitemap/sitemap.html,3\2\32799cb33eae3588761f7c274ebc280068ab14fd
 a
 1src/content-page-student-2/content-student-2.html,e\4\e495f3a6290535bc347ed55304bf53f93d7a72b6
 a
@@ -39,8 +37,6 @@ Z
 *src/editor-page-student-1/editor-script.js,8\2\821e40cabcb53b22a3cb2f015df924ea91eb59ca
 L
 src/home-page/home-page.html,4\b\4b86da4c3c1ec8a08862c68c93c57e47b759e377
-L
-src/shop-page/shop-script.js,6\0\604fd40eb6c70b5b0f94372858ab5be07ed1276f
 Q
 !src/home-page/home-page-style.css,c\b\cb0c6e6ae510d25e208b65e6df40f59c3671ba48
 a
